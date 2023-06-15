@@ -12,6 +12,9 @@ Reference removal is the process of obtaining the underlying type when given a r
  Reference collapsing is a rule in C++ that applies when you end up with a reference to a reference, which can happen during template instantiation or with the use of decltype. In C++ there is no such thing as a reference to a reference, so the reference collapsing rules are applied:
 
 T& & becomes T&
+ 
 T& && becomes T&
+ 
 T&& & becomes T&
+ 
 T&& && becomes T&&
